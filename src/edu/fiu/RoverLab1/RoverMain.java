@@ -25,6 +25,7 @@ public class RoverMain {
 
 	/**
 	 * @param args
+	 * These commands are running the selfchecks
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
