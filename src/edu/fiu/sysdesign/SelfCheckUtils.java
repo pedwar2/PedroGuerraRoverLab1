@@ -15,6 +15,8 @@ package edu.fiu.sysdesign;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.fiu.RoverLab1.RoverMain;
+
 /**
  * This will essentially be a class of Static methods that you can 
  * use to test anything in your own classes. I will be adding more
@@ -85,12 +87,12 @@ public class SelfCheckUtils {
 	 * From inside the Test class (e.g. from runSelfCheck):
 	 *    SelfCheckUtils.basicSelfCheckRunner(this);
 	 *    
-	 * @param item the item to be tested
+	 * @param i the item to be tested
 	 * @return the colorized version of the run. Colors may not show in all terminals
 	 */
-	public static boolean basicSelfCheckRunner(SelfCheckCapable item) {
-		boolean result = item.selfCheck();
-		System.out.println("Checking " + item.getComponentName() + "... " + prettify(result));
+	public static boolean basicSelfCheckRunner(SelfCheckCapable i) {
+		boolean result = i.selfCheck();
+		System.out.println("Checking " + i.getComponentName() + "... " + prettify(result));
 		return result;
 	}
 
